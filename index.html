@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gaurav Kumar's portfolio. A Creative developer and designer. Discover projects, info, and more.">
+    <title>GAURAV KUMAR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/satoshi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind config for custom fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'satoshi': ['"Satoshi"', 'sans-serif'],
+                        'satoshi-light': ['"Satoshi-Light"', 'sans-serif'],
+                        'playfair': ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="antialiased">
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-container">
+            <div class="star-icon-large">✧</div>
+            <div class="loading-text">
+                Loading<span class="dots"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="app" class="mx-auto">
+        <header id="header" class="flex justify-between items-center py-4 px-4 sm:px-6 lg:px-8 sticky top-0 z-20">
+            <div id="home-link" class="text-lg font-light tracking-tight cursor-pointer font-satoshi">Gaurav Kumar</div>
+            <nav class="flex items-center space-x-4 sm:space-x-6 text-md font-satoshi">
+                <a href="#projects-section" id="work-link" class="hover:underline">Work</a>
+                <a href="#" id="info-link" class="hover:underline">Info</a>
+                <a href="#" id="chat-link" class="hover:underline">Stats</a>
+            </nav>
+        </header>
+
+        <main class="relative">
+            <section id="home-page" class="page visible">
+                <div class="bg-[#F3F3F1] text-[#1a1a1a] min-h-screen flex flex-col justify-center overflow-hidden rounded-3xl mx-4 my-2 relative"
+                    data-section="hero">
+                    <div
+                        class="max-w-4xl mx-auto flex flex-col justify-center space-y-12 px-6 lg:px-8 py-10 relative z-10">
+                        <div class="star-icon"></div>
+                        <div class="typing-container">
+                            <h1 class="typing-text" id="typing-text"></h1>
+                            <h1 class="typing-text headline" id="headline-text"></h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="projects-section"
+                    class="bg-black text-white min-h-screen flex flex-col justify-center overflow-hidden rounded-3xl mx-4 my-2 relative"
+                    data-section="projects">
+                    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 relative z-10">
+                        <h2 class="page-title text-5xl md:text-6xl mb-16 font-playfair">Projects &nbsp;<i
+                                class="fas fa-arrow-right" style="transform: rotate(45deg); display: inline-block;"></i>
+                        </h2>
+                        <div class="horizontal-scroll-container">
+                            <div class="project-card group" data-project="codvan">
+                                <div class="project-image-container">
+                                    <img src="codvan.png" alt="Codvan" class="project-image">
+                                </div>
+                                <h3 class="project-title">
+                                    Codvan
+                                    <span class="project-arrow">↗</span>
+                                </h3>
+                            </div>
+                            <div class="project-card group" data-project="glimpseio">
+                                <div class="project-image-container">
+                                    <img src="glimpseio.png" alt="Glimpseio" class="project-image">
+                                </div>
+                                <h3 class="project-title">
+                                    Glimpseio
+                                    <span class="project-arrow">↗</span>
+                                </h3>
+                            </div>
+                            <div class="project-card group" data-project="hello-03">
+                                <div class="project-image-container">
+                                    <img src="aiethic.jpg" alt="Aiethic" class="project-image">
+                                </div>
+                                <h3 class="project-title">
+                                    Aiethic
+                                    <span class="project-arrow">↗</span>
+                                </h3>
+                            </div>
+                            <div class="project-card group" data-project="portfolio-website">
+                                <div class="project-image-container">
+                                    <img src="hello.png" alt="hello" class="project-image">
+                                </div>
+                                <h3 class="project-title">
+                                    Hello
+                                    <span class="project-arrow">↗</span>
+                                </h3>
+                            </div>
+                            <div class="project-card group" data-project="e-commerce-platform">
+                                <div class="project-image-container">
+                                    <img src="hello.png" alt="hello" class="project-image">
+                                </div>
+                                <h3 class="project-title">
+                                    hello
+                                    <span class="project-arrow">↗</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section
+                    class="bg-[#F3F3F1] text-black min-h-screen flex flex-col justify-center overflow-hidden rounded-3xl mx-4 my-2 relative"
+                    data-section="recognition">
+                    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10 relative z-10">
+                        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <h2
+                                class="section-title section-heading text-sm tracking-Fewest text-gray-500 mb-12 font-satoshi">
+                                ↳ Few things</h2>
+                            <div class="space-y-8 font-satoshi-light" style="font-size: 18px;">
+                                <div class="grid grid-semibold1 md:grid-cols-3 gap-4">
+                                    <div class="text-gray-700">Interests</div>
+                                    <div class="md:col-span-2">Creative Development<br>Machine Learning</div>
+                                </div>
+                                <div class="grid grsemiboldls-1 md:grid-cols-3 gap-4">
+                                    <div class="text-gray-700">Into</div>
+                                    <div class="md:col-span-2">Robotics<br>AI</div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div class="text-gray-700">Aspirations</div>
+                                    <div class="md:col-span-2">Explore Earth<br>Shared Experiences</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer
+                    class="bg-black text-white min-h-[50vh] flex flex-col justify-center overflow-hidden rounded-3xl mx-0 sm:rounded-t-3xl sm:mx-0 my-2 relative"
+                    data-section="footer-contact">
+                    <div
+                        class="absolute bottom-0 left-0 w-full h-10 rounded-t-full blur-2xl opacity-70 pointer-events-none z-0 footer-decor">
+                    </div>
+                    <div class="w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 relative z-10">
+                        <div class="max-w-6xl mx-auto">
+                            <div class="text-left space-y-6 sm:space-y-8">
+                                <p class="text-base sm:text-lg text-gray-300 font-satoshi">I create tech that feel
+                                    humans.</p>
+                                <div class="star-icon text-white"></div>
+                                <div class="space-y-4 sm:space-y-6">
+                                    <h2
+                                        class="page-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-0 font-playfair">
+                                        <span class="connect-text">Let's Connect</span>
+                                        <span class="emoji-pusher sm:ml-4">
+                                            <i class="far fa-face-smile"></i>
+                                        </span>
+                                    </h2>
+
+                                    <a href="mailto:tendsgaurav@outlook.com"
+                                        class="inline-block text-lg sm:text-xl md:text-2xl text-white hover:text-[#EFBF04] transition-colors duration-300 hover:underline break-all sm:break-normal font-satoshi">
+                                        tendsgaurav@outlook.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-gray-700 pt-4 sm:pt-6 mt-6 sm:mt-8">
+                            <div
+                                class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-4">
+                                <div class="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 text-sm font-satoshi">
+                                    <a href="https://instagram.com/tendsgaurav" target="_blank" rel="noopener noreferrer"
+                                        class="text-gray-400 hover:text-white transition-colors duration-300 py-1">Instagram</a>
+                                    <!-- <a href="https://x.com" target="_blank" rel="noopener noreferrer"
+                                        class="text-gray-400 hover:text-white transition-colors duration-300 py-1">X</a> -->
+                                    <a href="https://linkedin.com/in/tendsxgaurav" target="_blank" rel="noopener noreferrer"
+                                        class="text-gray-400 hover:text-white transition-colors duration-300 py-1">LinkedIn</a>
+                                    <a href="https://github.com/tendsXgaurav" target="_blank" rel="noopener noreferrer"
+                                        class="text-gray-400 hover:text-white transition-colors duration-300 py-1">GitHub</a>
+                                </div>
+                                <div class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0 font-satoshi">
+                                    © Gaurav Kumar
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+    </div>
+    </footer>
+    </section>
+
+    <section id="info-page" class="page hidden">
+        <div class="bg-white p-6 sm:p-8 md:pt-16 md:pb-24">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex justify-between items-start md:items-end mb-16 md:mb-24">
+                    <h1 class="page-title text-4xl sm:text-5xl md:text-7xl lg:text-8xl mb-0 flex-1 font-playfair">
+                        Info</h1>
+                    <div class="flex-shrink-0 ml-4" style="position:relative;">
+                        <div class="protected-image rounded-full overflow-hidden w-16 h-16 sm:w-20 sm:h-20 md:w-32 md:h-32 border-2 border-gray-200 shadow-sm" style="display:inline-block;">
+                            <img id="profile-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Gaurav Kumar" class="w-full h-full object-cover" loading="lazy" />
+                            <div class="image-protection-overlay" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-16 md:space-y-24">
+                    <div class="info-section grid md:grid-cols-3 gap-8 font-satoshi-light info-card">
+                        <h2 class="section-title section-heading text-sm tracking-widest text-gray-600 font-playfair">
+                            ↳ Overview</h2>
+                        <div class="md:col-span-2">
+                            <p class="leading-relaxed font-satoshi-light" style="font-size: 18px;">
+                                Hi I'm Gaurav, I love building things that feel a little magical —
+                                the kind of ideas that sound impossible at first,
+                                but slowly take shape through code, creativity, and curiosity.
+                                I don't just build projects.<br>I bring bold vibes to life.
+                                Turning "what if?" into "what's next."
+                                <br>Let's meet if you are cooking any idea.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-section grid md:grid-cols-3 gap-8 font-satoshi-light info-card">
+                        <h2 class="section-title section-heading text-sm tracking-widest text-gray-600 font-satoshi">
+                            ↳ Learnings /Skills</h2>
+                        <ul class="md:col-span-2 grid grid-cols-2 gap-x-8 gap-y-4 text-xl md:text-2xl text-gray-700"
+                            style="font-size: 20px;">
+                            <li>UX/UI Design</li>
+                            <li>Web Dev</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Machine Learning</li>
+                            <li>Data Structure</li>
+                            <li>Competitive Programming</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-section grid md:grid-cols-3 gap-8 font-satoshi-light info-card">
+                        <h2 class="section-title section-heading text-sm tracking-widest text-gray-600 font-satoshi">
+                            ↳ Few things</h2>
+                        <div class="md:col-span-2 space-y-6" style="font-size: 18px;">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="text-gray-700">Interests</div>
+                                    <div class="md:col-span-2">Creative Development<br>Machine Learning</div>
+                                </div>
+                                <div class="grid grsemiboldls-1 md:grid-cols-3 gap-4">
+                                    <div class="text-gray-700">Into</div>
+                                    <div class="md:col-span-2">Robotics<br>AI</div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div class="text-gray-700">Aspirations</div>
+                                    <div class="md:col-span-2">Explore Earth<br>Shared Experiences</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Detail Page (copied from main) -->
+    <section id="project-page" class="page hidden project-page-slide">
+        <div class="min-h-screen bg-white text-black">
+            <!-- Project Header -->
+            <div class="sticky top-0 bg-white/95 backdrop-blur-md z-30 border-b border-gray-100">
+                <div class="flex justify-between items-center py-6 px-6 lg:px-12">
+                    <div class="text-xs tracking-widest text-gray-400 uppercase">↳ Project Details</div>
+                    <button id="close-project"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors text-gray-600 hover:text-black">
+                        <i class="fas fa-times text-sm"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Content -->
+            <div class="project-content">
+                <!-- Hero Section -->
+                <div class="relative">
+                    <!-- Project Title & Meta -->
+                    <div class="px-6 lg:px-12 pt-12 pb-8">
+                        <div class="max-w-6xl mx-auto">
+                            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                                <div>
+                                    <div class="mb-6">
+                                        <span id="project-meta"
+                                            class="text-sm text-gray-400 tracking-widest uppercase font-satoshi">E-commerce
+                                            /
+                                            2024</span>
+                                    </div>
+                                    <h1 id="project-title"
+                                        class="text-4xl md:text-5xl lg:text-6xl font-light mb-6 text-gray-900 font-playfair">
+                                        Project Title</h1>
+                                    <p id="project-subtitle"
+                                        class="text-xl md:text-2xl text-gray-600 leading-relaxed mb-8 font-satoshi-light">
+                                        Project
+                                        Subtitle</p>
+
+                                    <!-- Project Details Grid -->
+                                    <div class="grid grid-cols-2 gap-6 mb-8">
+                                        <div>
+                                            <h4
+                                                class="text-xs tracking-widest text-gray-400 uppercase mb-2 font-satoshi">
+                                                Role</h4>
+                                            <p id="project-role" class="text-gray-800 font-medium font-satoshi">
+                                                Full Stack
+                                                Developer</p>
+                                        </div>
+                                        <div>
+                                            <h4
+                                                class="text-xs tracking-widest text-gray-400 uppercase mb-2 font-satoshi">
+                                                Duration</h4>
+                                            <p id="project-duration" class="text-gray-800 font-medium font-satoshi">3
+                                                months
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <h4
+                                                class="text-xs tracking-widest text-gray-400 uppercase mb-2 font-satoshi">
+                                                Year</h4>
+                                            <p id="project-year" class="text-gray-800 font-medium font-satoshi">
+                                                2024</p>
+                                        </div>
+                                        <div>
+                                            <h4
+                                                class="text-xs tracking-widest text-gray-400 uppercase mb-2 font-satoshi">
+                                                Status</h4>
+                                            <p class="text-gray-800 font-medium font-satoshi">Completed</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Technologies -->
+                                    <div class="mb-8">
+                                        <h4 class="text-xs tracking-widest text-gray-400 uppercase mb-4 font-satoshi">
+                                            Technologies</h4>
+                                        <div id="project-tech-tags" class="flex flex-wrap gap-2">
+                                            <!-- Tech tags will be populated by JavaScript -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Call to Action -->
+                                    <a id="project-link" href="#" target="_blank"
+                                        class="inline-flex items-center space-x-3 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors group font-satoshi">
+                                        <span>View Live Project</span>
+                                        <i
+                                            class="fas fa-external-link-alt text-sm group-hover:translate-x-1 transition-transform"></i>
+                                    </a>
+                                </div>
+
+                                <!-- Hero Image -->
+                                <div class="order-first lg:order-last">
+                                    <div class="project-hero-wrapper">
+                                        <img id="project-hero-image" src="" alt="" class="project-hero-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="px-6 lg:px-12 py-16">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid lg:grid-cols-3 gap-16">
+                            <!-- Overview -->
+                            <div class="lg:col-span-2">
+                                <div class="mb-16">
+                                    <h2 class="text-2xl md:text-3xl font-light mb-6 text-gray-900 font-playfair">
+                                        Overview
+                                    </h2>
+                                    <div class="prose prose-lg max-w-none">
+                                        <p id="project-overview"
+                                            class="text-lg leading-relaxed text-gray-700 font-satoshi-light">
+                                            This project showcases innovative design and development
+                                            approaches...
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Challenge & Solution -->
+                                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                                    <div>
+                                        <h3 class="text-xs tracking-widest text-gray-400 uppercase mb-4 font-satoshi">
+                                            Challenge</h3>
+                                        <p id="project-challenge"
+                                            class="text-gray-700 leading-relaxed font-satoshi-light">
+                                            The main challenge was to create something innovative...
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs tracking-widest text-gray-400 uppercase mb-4 font-satoshi">
+                                            Solution</h3>
+                                        <p id="project-solution"
+                                            class="text-gray-700 leading-relaxed font-satoshi-light">
+                                            We implemented a comprehensive approach...
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Gallery -->
+                                <div>
+                                    <h2 class="text-xs tracking-widest text-gray-400 uppercase mb-8 font-satoshi">
+                                        Gallery
+                                    </h2>
+                                    <div class="grid md:grid-cols-2 gap-6" id="project-gallery">
+                                        <!-- Gallery images will be dynamically added -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sidebar -->
+                            <div class="lg:col-span-1">
+                                <!-- Project Navigation -->
+                                <div class="sticky top-24">
+                                    <div class="bg-gray-50 rounded-2xl p-8 mb-8">
+                                        <h3 class="text-xs tracking-widest text-gray-400 uppercase mb-6 font-satoshi">
+                                            Project
+                                            Navigation</h3>
+                                        <nav class="space-y-4">
+                                            <a href="#overview"
+                                                class="block text-gray-600 hover:text-black transition-colors py-2 border-b border-gray-200 last:border-b-0 font-satoshi-light">Overview</a>
+                                            <a href="#challenge"
+                                                class="block text-gray-600 hover:text-black transition-colors py-2 border-b border-gray-200 last:border-b-0 font-satoshi-light">Challenge</a>
+                                            <a href="#solution"
+                                                class="block text-gray-600 hover:text-black transition-colors py-2 border-b border-gray-200 last:border-b-0 font-satoshi-light">Solution</a>
+                                            <a href="#gallery"
+                                                class="block text-gray-600 hover:text-black transition-colors py-2 font-satoshi-light">Gallery</a>
+                                        </nav>
+                                    </div>
+
+                                    <!-- Next Project -->
+                                    <div class="bg-black text-white rounded-2xl p-8">
+                                        <h3 class="text-xs tracking-widest text-gray-400 uppercase mb-4 font-satoshi">
+                                            Next
+                                            Project</h3>
+                                        <h4 id="next-project-title" class="text-xl font-light mb-2 font-playfair">
+                                            Glimpseio</h4>
+                                        <p id="next-project-subtitle"
+                                            class="text-gray-300 text-sm mb-6 font-satoshi-light">Skip the guess, Skip
+                                            the line</p>
+                                        <button id="view-next-btn"
+                                            class="text-sm text-white hover:text-gray-300 transition-colors flex items-center space-x-2 group font-satoshi">
+                                            <span>View Next</span>
+                                            <i
+                                                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer CTA -->
+                <div class="border-t border-gray-100 px-6 lg:px-12 py-16">
+                    <div class="max-w-6xl mx-auto text-center">
+                        <h3 class="text-2xl md:text-3xl font-light mb-4 font-playfair">
+                            Interested in working together?
+                        </h3>
+                        <p class="text-gray-600 mb-8 max-w-2xl mx-auto font-satoshi-light">
+                            Let's discuss your project and see how we can create something amazing together.
+                        </p>
+                        <a href="mailto:tendsgaurav@outlook.com"
+                            class="inline-flex items-center space-x-3 px-8 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-satoshi">
+                            <span>Start a Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="all-projects-page" class="page hidden">
+    </section>
+
+    <section id="chat-page" class="page hidden">
+        <div
+            class="min-h-screen bg-black text-white flex flex-col justify-center overflow-hidden rounded-3xl mx-4 my-2">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10">
+                <div class="flex justify-between items-center mb-16">
+                    <p> </p>
+                    <a href="#" id="back-arrow" class="text-2xl hover:opacity-75">←</a>
+                </div>
+
+                <div class="flex-grow w-full">
+                    <div class="star-icon text-white mb-8"></div>
+                    <h1 class="page-title text-4xl md:text-6xl lg:text-7xl mb-8 font-playfair">Contribution
+                        Calendar</h1>
+
+                    <div
+                        class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 p-6 bg-gray-900 rounded-3xl border border-gray-800 font-satoshi-light">
+                        <div>
+                            <h3 class="text-xl font-light mb-2">Appreciate My Work</h3>
+                            <p class="text-gray-400 text-sm">Show some love for the projects and contributions
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <span class="text-sm text-gray-400 mr-2 font-satoshi">Total
+                                    appreciations:</span>
+                                <span id="appreciation-count"
+                                    class="text-[#EFBF04] font-semibold font-satoshi">127</span>
+                            </div>
+                        </div>
+                        <button id="appreciate-btn"
+                            class="mt-4 sm:mt-0 bg-[#2c3e50] text-white px-6 py-3 rounded-2xl font-medium hover:bg-[#475a6a] transition-colors flex items-center space-x-2">
+                            <span>❤️</span>
+                            <span>Appreciate</span>
+                        </button>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4 font-satoshi-light">
+                            <h3 class="text-lg font-medium">Contributions</h3>
+                            <div class="flex items-center space-x-2 text-sm text-gray-400">
+                                <span>Less</span>
+                                    <div class="flex space-x-1">
+                                    <div class="w-3 h-3 bg-gray-800 rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-[#475a6a] rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-[#2c3e50] rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-[#88979f] rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-[#EFBF04] rounded-sm"></div>
+                                </div>
+                                <span>More</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="bg-gray-900 p-4 rounded-2xl border border-gray-800">
+                                <div class="text-2xl font-bold text-[#EFBF04] font-satoshi">247</div>
+                                <div class="text-sm text-gray-400 font-satoshi">Total Contributions</div>
+                            </div>
+                            <div class="bg-gray-900 p-4 rounded-2xl border border-gray-800">
+                                <div class="text-2xl font-bold text-[#EFBF04] font-satoshi">156</div>
+                                <div class="text-sm text-gray-400 font-satoshi">Days Active</div>
+                            </div>
+                            <div class="bg-gray-900 p-4 rounded-2xl border border-gray-800">
+                                <div class="text-2xl font-bold text-[#EFBF04] font-satoshi">23</div>
+                                <div class="text-sm text-gray-400 font-satoshi">Projects</div>
+                            </div>
+                            <div class="bg-gray-900 p-4 rounded-2xl border border-gray-800">
+                                <div class="text-2xl font-bold text-[#EFBF04] font-satoshi">45</div>
+                                <div class="text-sm text-gray-400 font-satoshi">Longest Streak</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto bg-gray-900 rounded-3xl p-6 border border-gray-800 mb-8">
+                        <div class="inline-block min-w-full">
+                            <div class="flex mb-2 text-xs text-gray-400">
+                                <div class="w-8"></div>
+                                <div class="grid grid-cols-12 gap-1 flex-1">
+                                    <div>Jan</div>
+                                    <div></div>
+                                    <div>Mar</div>
+                                    <div></div>
+                                    <div>May</div>
+                                    <div></div>
+                                    <div>Jul</div>
+                                    <div></div>
+                                    <div>Sep</div>
+                                    <div></div>
+                                    <div>Nov</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex flex-col text-xs text-gray-400 mr-2">
+                                    <div class="h-3 mb-1"></div>
+                                    <div class="h-3 mb-1">Mon</div>
+                                    <div class="h-3 mb-1"></div>
+                                    <div class="h-3 mb-1">Wed</div>
+                                    <div class="h-3 mb-1"></div>
+                                    <div class="h-3 mb-1">Fri</div>
+                                    <div class="h-3 mb-1"></div>
+                                </div>
+                                <div id="contribution-grid" class="grid grid-cols-53 gap-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

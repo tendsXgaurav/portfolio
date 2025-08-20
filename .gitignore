@@ -1,0 +1,11 @@
+# Ignore raw and other image assets (adjust if you want to commit some of them)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.avif
+
+# If you decide to keep some images tracked, negate them like below examples:
+# !keep_this.png
+# !images/brand-logo.png
